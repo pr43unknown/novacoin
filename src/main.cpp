@@ -2788,7 +2788,7 @@ bool LoadBlockIndex(bool fAllowNew)
 
         const string strTimestamp = "https://bitcointalk.org/index.php?topic=134179.msg1502196#msg1502196";
         CTransaction txNew;
-        txNew.nTime = 1360105017;
+        txNew.nTime = 1520170450;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(9999) << vector<unsigned char>(strTimestamp.begin(), strTimestamp.end());
@@ -2798,7 +2798,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.hashPrevBlock = 0;
         block.hashMerkleRoot = block.BuildMerkleTree();
         block.nVersion = 1;
-        block.nTime    = 1360105017;
+        block.nTime    = 1520170450;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
         block.nNonce   = !fTestNet ? 1575379 : 46534;
 
